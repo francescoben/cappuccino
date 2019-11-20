@@ -1,11 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Francesco Benigno">
+    <meta name="description" content="A simple site for those who don't know if it's the right time for a cappuccino.">
     <title>Should I have a cappuccino&quest;</title>
-    <style>html,body{box-sizing:border-box;overflow:hidden;height:100%}body{display:flex;justify-content:center;align-items:center;font-family:Arial,sans-serif;color:black}h1{font-weight:700;font-size:12rem}</style>
+    <style>
+      html,
+      body {
+        box-sizing: border-box;
+        overflow: hidden;
+        height: 100%;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        color: black;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 8rem;
+      }
+    </style>
   </head>
   <body>
     <h1 id="response"></h1>
@@ -13,5 +33,6 @@
       const r = new Date().getHours() < 11 ? "YES" : "NO";
       document.getElementById("response").innerHTML = r;
     </script>
+    <noscript>I need Javascript to give you an answer :(</noscript>
   </body>
 </html>
