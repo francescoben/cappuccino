@@ -37,7 +37,8 @@
   <body>
     <h1 id="response"></h1>
     <script>
-      const r = new Date().getHours() < 11 ? "YES" : "NO";
+      const h = new Date().getHours();
+      const r = h > 4 && h < 11 ? "YES" : "NO";
       document.getElementById("response").innerHTML = r;
     </script>
     <noscript>I need Javascript to give you an answer :(</noscript>
